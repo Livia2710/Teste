@@ -4,7 +4,7 @@ function Login() {
   return (
 
     <div className="body">
-          <h1 >PLAYLISTS </h1>
+          <h1 >Login </h1>
   
     </div>
 

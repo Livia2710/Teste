@@ -27,8 +27,6 @@ function App() {
           <Route path="/playlists" element={<Playlists />} />
         </Routes>
       </Router>
-
-      <Home/>
     </div>
   );
 }
