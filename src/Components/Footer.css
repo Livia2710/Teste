@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&display=swap');
+
+.main-footer {
+    font-family: 'Inter', sans-serif;
+    background-color: #333;
+    color: #fff;
+    padding-top: 20px;
+    margin-top: 50px;
+  }
+  
+  .container {
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-bottom: 20px;
+  }
+  
+  .column {
+    flex: 1;
+    margin: 10px;
+  }
+  .nome{
+    margin-top: 15px;
+  }
+  .plataforma, .informacoes, .inscricao{
+    font-size: 20px;
+  }
+
+  .list-unstyled{
+    list-style: none;
+    margin-top: 10px;
+  }
+  .column h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .column ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .column ul li {
+    margin-bottom: 5px;
+    list-style-type: none;
+  }
+  
+  .email {
+    width: 100%;
+    padding: 5px;
+    margin-top: 7px;
+    background-color: black;
+    color: #fff;
+    border-radius: 5px;
+  }
+
+  
+  .footer-bottom {
+    text-align: center;
+    /* margin-top: 20px; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: black;
+    color: #B71129;
+  }
+  
+  .footer-bottom p {
+    margin: 0;
+  }
+  

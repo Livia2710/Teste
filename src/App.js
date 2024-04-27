@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-import About from "./Components/About";
-import Contact from "./Components/Contact";
+import Login from "./Components/Login";
+import Playlists from "./Components/Playlists";
 
 // Componente funcional principal App
 function App() {
@@ -21,12 +21,14 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* Rota para a página "Sobre" */}
-          <Route path="/about" element={<About />} />
+          <Route path="/login" element={<Login />} />
 
           {/* Rota para a página "Contato" */}
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/playlists" element={<Playlists />} />
         </Routes>
       </Router>
+
+      <Home/>
     </div>
   );
 }

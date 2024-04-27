@@ -1,0 +1,76 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+
+
+.card {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+    width: 90% !important ; 
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.cover-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    background-color: blueviolet;
+    width: 100%; 
+    height: auto; 
+   
+
+}
+
+.music-info {
+    padding: 10px;
+    font-size: 24px;
+    text-align: center;
+    background-color: purple;
+}
+
+/* Carousel.css */
+.slick-slide {
+    padding: 10px; /* Adiciona espaço entre os slides */
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 1; /* Garante que os botões estejam acima de todos os outros elementos */
+    opacity: 1 !important; /* Aumenta a visibilidade */
+    background-color: rgba(0,0,0,0.5); /* Fundo semi-transparente para melhor visibilidade */
+    color: white !important; /* Cor do ícone */
+    border-radius: 50%; /* Ícones circulares */
+    width: 36px; /* Tamanho do botão */
+    height: 36px; /* Altura igual ao tamanho */
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Ajustando o tamanho dos botões em diferentes resoluções */
+@media (max-width: 1024px) {
+    .slick-prev,
+    .slick-next {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Ajuste adicional para dispositivos móveis */
+@media (max-width: 600px) {
+    .slick-prev,
+    .slick-next {
+        width: 24px;
+        height: 24px;
+    }
+}
