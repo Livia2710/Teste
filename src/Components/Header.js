@@ -44,7 +44,7 @@ const Header = () => {
                 <ul className="toggle">
                 <li>
             <a href="/login">
-              <span>Perfil</span>
+              <span className="perfil">Perfil</span>
             </a>
           </li>
           <li>

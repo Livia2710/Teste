@@ -1,19 +1,23 @@
 @import "~slick-carousel/slick/slick.css";
 @import "~slick-carousel/slick/slick-theme.css";
 
-
+.container_carousel {
+    width: 85vw;
+    margin: auto;
+    margin-left: 5rem;
+}
 
 .card {
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    transition: transform 0.2s;
-    width: 90% !important ; 
-    background-color: violet;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     padding: 50px;
     overflow: hidden;
+    border-radius: 50px;
+    background-color: gray;
+    transition: transform 0.2s, background-color 0.5s ease; /* Consolidated transition */
 }
 
 .card:hover {
@@ -22,42 +26,39 @@
 
 .cover-image {
     width: 100%;
-    height: auto;
+    height: 200px;
     display: block;
-    background-color: blueviolet;
-    width: 100%; 
-    height: auto; 
-   
-
 }
 
 .music-info {
     padding: 10px;
     font-size: 24px;
     text-align: center;
-    background-color: purple;
+    background-color: #dc203c4b;
 }
 
-/* Carousel.css */
 .slick-slide {
-    padding: 10px; /* Adiciona espaço entre os slides */
+    padding: 10px; 
 }
 
 .slick-prev,
 .slick-next {
-    z-index: 1; /* Garante que os botões estejam acima de todos os outros elementos */
-    opacity: 1 !important; /* Aumenta a visibilidade */
-    background-color: rgba(0,0,0,0.5); /* Fundo semi-transparente para melhor visibilidade */
-    color: white !important; /* Cor do ícone */
-    border-radius: 50%; /* Ícones circulares */
-    width: 36px; /* Tamanho do botão */
-    height: 36px; /* Altura igual ao tamanho */
+    opacity: 1 ; /* Increases visibility */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better visibility */
+    color: white; /* Icon color */
+    border-radius: 50%; /* Circular icons */
+    width: 36px; /* Button size */
+    height: 36px; /* Equal height */
     display: flex !important;
     align-items: center;
     justify-content: center;
 }
 
-/* Ajustando o tamanho dos botões em diferentes resoluções */
+.slick-prev {
+    z-index: 1;
+}
+
+/* Adjusting button sizes on different resolutions */
 @media (max-width: 1024px) {
     .slick-prev,
     .slick-next {
@@ -66,7 +67,7 @@
     }
 }
 
-/* Ajuste adicional para dispositivos móveis */
+/* Further adjustment for mobile devices */
 @media (max-width: 600px) {
     .slick-prev,
     .slick-next {

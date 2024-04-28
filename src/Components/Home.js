@@ -44,7 +44,11 @@ function Home() {
         
           </div>
         </div>
-        <div id="Carousel">
+        <div className="Carousel">
+          <Carousel/>
+        </div>
+
+        <div className="Carousel">
           <Carousel/>
         </div>
       <Footer/> 
