@@ -1,4 +1,4 @@
-import { Controls, Player } from "./container/componentes";
+import { Controls, Player } from "./container";
 
 
 function Playlists() {
@@ -8,7 +8,7 @@ function Playlists() {
     <Player/>
     <Controls/>
 
-    </>
+ </>
   );
 
 }
