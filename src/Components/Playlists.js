@@ -23,13 +23,13 @@ const PlaylisInfos = [
 
 const PlaylistSongs =[
 
-  {id: 2, cover: {Capa1}, name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04'},
-  {id: 3, cover: {Capa2}, name: 'Glipse of Us', author: 'Joji', durantion: '3:53'},
-  {id: 4, cover: {Capa3}, name: 'Sparks', author: 'Coldplay', durantion: '3:47'},
-  {id: 5, cover: {Capa4}, name: 'Grenade', author: 'Bruno Mars', durantion: '3:42'},
-  {id: 6, cover: {Capa5}, name: 'Rises the Moon', author: 'Liana Flores', durantion: '2:41'},
-  {id: 7, cover: {Capa6}, name: 'De 10 Mulher 11 é Maluca', author: 'Mc Saci', durantion: '1:47'},
-  {id: 8, cover: {Capa7}, name: 'Fogo Fátuo', author: 'Lupe De Lupe', durantion: '3:53'},
+  {id: 2, cover: '', name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04'},
+  {id: 3, cover: '', name: 'Glipse of Us', author: 'Joji', durantion: '3:53'},
+  {id: 4, cover: '', name: 'Sparks', author: 'Coldplay', durantion: '3:47'},
+  {id: 5, cover: '', name: 'Grenade', author: 'Bruno Mars', durantion: '3:42'},
+  {id: 6, cover: '', name: 'Rises the Moon', author: 'Liana Flores', durantion: '2:41'},
+  {id: 7, cover: '', name: 'De 10 Mulher 11 é Maluca', author: 'Mc Saci', durantion: '1:47'},
+  {id: 8, cover: '', name: 'Fogo Fátuo', author: 'Lupe De Lupe', durantion: '3:53'},
 ]
 
 const Playlists = () => {
@@ -67,9 +67,9 @@ const Playlists = () => {
                 <p className='name'>{Song.name}</p>
                 <p className='author'>{Song.author}</p>
               </li>
-              <li><p>{Song.durantion}</p></li>
+              <li className='time'><p>{Song.durantion}</p></li>
 
-              <li>
+              <li className='buttons'>
                 <img src={Save} className='saveButton'/>
                 <img src={Share} className='shareButton'/>
               </li>

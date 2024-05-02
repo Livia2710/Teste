@@ -73,11 +73,6 @@ h1{
     height: 20px;
 }
 
-.songs{
-    display: flex;
-    align-items: center;
-}
-
 .Song{
     display: flex;
     align-items: center;
@@ -95,5 +90,18 @@ h1{
 }
 
 .details{
-    margin-right: 30% !important;
+    width: 15%;
+    margin-right: 25%;
+}
+
+.time{
+    margin-right: 20%;
+}
+
+.buttons{
+    width: 100px;
+
+    display: flex;
+    justify-content: space-between;
+
 }
