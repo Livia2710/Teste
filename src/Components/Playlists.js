@@ -14,8 +14,10 @@ const Playlists = () => {
           <div className='backgrouGradient'></div>
           <img src={Banner}  className='banner'/>
           {Nome.map((music) => (
-            <h1 key={music.id}>{music.title}</h1>
-            <p key={music.id} className='author'>Por: {music.autor}</p>
+            <div className='playlisInfos'>
+              <h1 key={music.id}>{music.title}</h1>
+              <p key={music.id} className='author'>Por: {music.author}</p>
+            </div>
           ))};
           <p className='numberSongs'></p>
         </div>
