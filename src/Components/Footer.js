@@ -2,10 +2,11 @@ import React from 'react';
 import './Footer.css';
 import Logo from '../images/logo.png';
 
+
 const Footer = () => {
   return (
     <div className='main-footer'>
-      <div className='container'>
+      <div id='container'>
         <div className='row'>
 
           {/* colum 1*/}

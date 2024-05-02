@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from './Footer'
 
 import './Playlists.css'
 
@@ -40,6 +41,7 @@ const Playlists = () => {
         {/* The Cape of playlist */}
         <div className='backgrouGradient'></div>
         <img src={Banner}  className='banner'/>
+        
 
         {/* Informations of Playlist */}
         {PlaylisInfos.map((Playlists) => (
@@ -77,6 +79,8 @@ const Playlists = () => {
             </ul>
           ))}
       </div>
+
+      <Footer/>
       
     </div>
   )
