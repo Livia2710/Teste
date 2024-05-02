@@ -1,14 +1,15 @@
-import { Controls, Player } from "./container";
-
 
 function Playlists() {
 
   return (
-   <>
-    <Player/>
-    <Controls/>
 
- </>
+
+    <div className="body">
+          <h1 >PLAYLISTS </h1>
+  
+    </div>
+
+ 
   );
 
 }
