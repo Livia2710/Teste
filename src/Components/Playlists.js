@@ -1,17 +1,16 @@
+import React from 'react'
+import 'Playlist.css'
 
-function Playlists() {
-
+const Playlists = () => {
   return (
-
-
-    <div className="body">
-          <h1 >PLAYLISTS </h1>
-  
+    <div>
+      <div>
+        
+      </div>
     </div>
-
- 
-  );
-
+  )
 }
+
+
 
 export default Playlists;
