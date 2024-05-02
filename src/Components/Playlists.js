@@ -1,8 +1,9 @@
 import React from 'react'
 import './Playlists.css'
+import Banner from '../images/banner.png'
 
 const Nome = [
-  {id: 1, autor: 'Mitti'}
+  {id: 1, author: 'Mitti', title: 'Sou Triste e DECADENTE'}
 ];
 
 const Playlists = () => {
@@ -10,11 +11,13 @@ const Playlists = () => {
     <div>
       <div>
         <div className='banner'>
-          <h1>Sou Triste e DECADENTE</h1>
+          <div className='backgrouGradient'></div>
+          <img src={Banner}  className='banner'/>
           {Nome.map((music) => (
-            <p key={music.id} className='autor'>Por: {music.autor}</p>
-          ))}
-          <p className='numeroMusicas'></p>
+            <h1 key={music.id}>{music.title}</h1>
+            <p key={music.id} className='author'>Por: {music.autor}</p>
+          ))};
+          <p className='numberSongs'></p>
         </div>
       </div>
     </div>
