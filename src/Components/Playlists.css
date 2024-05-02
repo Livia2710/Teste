@@ -1,3 +1,47 @@
+*{
+    color: #fff;
+}
+ul{
+    list-style: none;
+}
+
+/* Banner */
+.backgrouGradient{
+    width: 100%;
+
+    background-color: #240140;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    z-index: 2;
+}
+
 .banner{
-    height: 450px;
+    width: 100%;
+
+    object-fit: cover;
+    display: block;
+    
+}
+
+/* Palylist Informations */
+.playlistFirst{
+    display: flex;
+    flex-direction: row;
+
+}
+.container .playlistInfo{
+    margin-top: -150px;
+    margin-left: 27px;
+}
+
+h1{
+    font-size: 75px;
+}
+
+.Buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }

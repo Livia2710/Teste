@@ -39,14 +39,15 @@ body {
 
 .imgs .play {
     height: 140px;
-    width: 250px;
+    width: 140px;
     position: absolute;
     top: 62%;
-    left: 50%;
+    left: 65%;
     opacity: 0; 
 }
 
-.imgs:hover .play {
+
+.imgs:hover .play{
     opacity: 1;
     transition: 0.6s ease-in-out;
     cursor: pointer;
