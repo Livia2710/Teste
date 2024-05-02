@@ -23,7 +23,7 @@ function Carousel() {
         prevArrow: <SampleArrow type="prev" />,
         afterChange: (current) => setCurrentSlide(current),
         responsive: [
-            {
+            { 
                 breakpoint: 1024,
                 settings: {
                     slidesToShow: 2,
