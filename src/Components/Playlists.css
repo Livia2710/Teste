@@ -99,7 +99,7 @@ h1{
 }
 
 .buttons{
-    width: 100px;
+    width: 50px;
 
     display: flex;
     justify-content: space-between;

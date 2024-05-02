@@ -2,13 +2,13 @@ import React from 'react'
 
 import './Playlists.css'
 
-import Capa1 from './capas/only.png'
-import Capa2 from './capas/glimpse.png'
-import Capa3 from './capas/sparks.png'
-import Capa4 from './capas/grenade.png'
-import Capa5 from './capas/rises.png'
-import Capa6 from './capas/de 10 mulher.png'
-import Capa7 from './capas/fogo.png'
+import Capa1 from '../../public/capas/only.png'
+import Capa2 from '../../public/capas/glimpse.png'
+import Capa3 from '../../public/capas/sparks.png'
+import Capa4 from '../../public/capas/grenade.png'
+import Capa5 from '../../public/capas/rises.png'
+import Capa6 from '../../public/capas/de 10 mulher.png'
+import Capa7 from '../../public/capas/fogo.png'
 
 import Banner from '../images/banner.png'
 import Play from '../images/play.png'
@@ -23,7 +23,7 @@ const PlaylisInfos = [
 
 const PlaylistSongs =[
 
-  {id: 2, cover: '', name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04'},
+  {id: 2, cover: '../../public/capas/only.png', name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04'},
   {id: 3, cover: '', name: 'Glipse of Us', author: 'Joji', durantion: '3:53'},
   {id: 4, cover: '', name: 'Sparks', author: 'Coldplay', durantion: '3:47'},
   {id: 5, cover: '', name: 'Grenade', author: 'Bruno Mars', durantion: '3:42'},
@@ -62,7 +62,7 @@ const Playlists = () => {
       <div className='songs'>
           {PlaylistSongs.map((Song) => (
             <ul key={Song.id} className='Song'>
-              <li className='cover'><img src={Song.cover}/></li>
+              <li className='cover'><img src= /*{Song.cover} /></li>
               <li className='details'>
                 <p className='name'>{Song.name}</p>
                 <p className='author'>{Song.author}</p>
