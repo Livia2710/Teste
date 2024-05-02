@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Header";
 import Home from "./Components/Home";
-import Login from "./Components/Login";
+import Login from "./Components/LoginCadastro";
 import Playlists from "./Components/Playlists";
 
 // Componente funcional principal App
@@ -21,7 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
 
           {/* Rota para a página "Sobre" */}
-          <Route path="/login" element={<Login />} />
+          <Route path="/LoginCadastro" element={<Login />} />
 
           {/* Rota para a página "Contato" */}
           <Route path="/playlists" element={<Playlists />} />
