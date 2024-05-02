@@ -63,7 +63,7 @@ const Playlists = () => {
           {PlaylistSongs.map((Song) => (
             <ul key={Song.id} className='Song'>
               <li className='cover'><img src={Song.cover}/></li>
-              <li>
+              <li className='details'>
                 <p className='name'>{Song.name}</p>
                 <p className='author'>{Song.author}</p>
               </li>

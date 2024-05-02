@@ -73,6 +73,11 @@ h1{
     height: 20px;
 }
 
+.songs{
+    display: flex;
+    align-items: center;
+}
+
 .Song{
     display: flex;
     align-items: center;
@@ -87,5 +92,8 @@ h1{
 
 .name{
     font-weight: bolder;
+}
+
+.details{
     margin-right: 30% !important;
 }
