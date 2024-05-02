@@ -4,6 +4,7 @@
 .container_carousel {
     width: 85vw;
     margin: auto;
+    margin-left: 5rem;
 }
 
 .card {
@@ -16,6 +17,7 @@
     overflow: hidden;
     border-radius: 50px;
     background-color: rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, background-color 0.5s ease; /* Consolidated transition */
 }
 
 .card:hover {
@@ -56,46 +58,20 @@
     z-index: 1;
 }
 
-/* ____________________________________________ */
-/* Responsividade */
-
-/* Tamanho médio */
+/* Adjusting button sizes on different resolutions */
 @media (max-width: 1024px) {
-    .cover-image {
-        height: 140px;
-    }
-
-    .music-info {
-        font-size: 20px;
-    }
-
     .slick-prev,
     .slick-next {
         width: 30px;
         height: 30px;
     }
-    
-
-    
-    
 }
 
-/* Tamanho pequeno */
+/* Further adjustment for mobile devices */
 @media (max-width: 600px) {
-
     .slick-prev,
     .slick-next {
         width: 24px;
         height: 24px;
     }
-
-    .cover-image {
-        height: auto;
-    }
-
-    .music-info {
-        font-size: 20px;
-    }
-    
 }
-

@@ -70,5 +70,3 @@ function SampleArrow({ className, style, onClick, type }) {
 }
 
 export default Carousel;
-
-
