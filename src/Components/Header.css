@@ -21,19 +21,27 @@ nav {
     height: 75px;
 }
 
+.pesquisa{
+    border-radius: 10px;
+    width: 300px;
+    margin-left: 900px;
+    color: black;
+}
+
 
 .burger-menu {
-    height: 100%;
+    height: 30px;
     width: 3em;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     justify-content: space-between;
     cursor: pointer;
+    margin-right: 30px;
 }
 .burger-bar {
     width: 3em;
-    height: 0.5em;
+    height: 0.3em;
     background-color:#CD2840;
     border-radius: 0.5em;
 }
@@ -59,7 +67,7 @@ nav {
 /* ____Animações___*/
 /* clicked */
 .burger-bar.clicked:nth-child(1){
-    transform: rotate(45deg) translate(0.75em, 1.25em);
+    transform: rotate(45deg) translate(0.100em, 1.25em);
     transition: ease-out 0.5s;
 }
 
@@ -69,7 +77,7 @@ nav {
 }
 
 .burger-bar.clicked:nth-child(3){
-    transform: rotate(135deg) translate(-0.5em, 1em);
+    transform: rotate(135deg) translate(-0.40em, 1em);
     transition: ease-out 0.5s;
 }
 
@@ -85,23 +93,24 @@ nav {
 
 
 
-.toggle li {
-    list-style: none;
+    .toggle li {
     padding: 20px;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-}
+    text-decoration: none;
+   
+} 
 
-.toggle li a {
+.toggle li a{
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 400;
-    color: #CD2840;
+    /* color: #CD2840; */
     transition: 0.3s ease-in-out;
-}
+} 
 
 .toggle li a:hover{
     color: #976df2;
