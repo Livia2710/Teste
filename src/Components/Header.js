@@ -5,6 +5,9 @@ import './Header.css';
 import IconUser from '../icones/perfil.png'
 import IconHome from '../icones/home.png'
 import IconPlaylist from '../icones/playlist.png'
+// import IconUserHover from '../icones/perfilV.png' 
+// import IconHomeHover from '../icones/homeV.png' 
+// import IconPlaylistHover from '../icones/playlistV.png' 
 
 const Header = () => {
 
@@ -54,7 +57,7 @@ const Header = () => {
       
 
         <ul className="toggle">
-                <li>
+                <li className="borda">
                   <img src={IconUser} alt="" className="icone" />
             <a href="/LoginCadastro">
               <span id="span" className="perfil">Perfil</span>

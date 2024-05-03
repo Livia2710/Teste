@@ -18,9 +18,9 @@ const Footer = () => {
           <div className='plataforma'>
             <h4>Plataformas</h4>
             <ul className="list-unstyled"> 
-              <li>App</li>
-              <li>Desktop</li>
-              <li>Mobile</li>
+              <li><a href="#">App</a></li>
+              <li><a href="#">Desktop</a></li>
+              <li><a href="#">Mobile</a></li>
               
             </ul>
           </div>
@@ -29,9 +29,9 @@ const Footer = () => {
           <div className='informacoes'>
             <h4>Informações</h4>
             <ul className="list-unstyled"> 
-              <li>Contatos</li>
-              <li>Perguntas Frequentes</li>
-              <li>Termos de Serviços</li>
+              <li><a href="#">Contatos</a></li>
+              <li><a href="#">Perguntas Frequentes</a></li>
+              <li><a href="#">Termos de Serviços</a></li>
             </ul>
           </div>
 
