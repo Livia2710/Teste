@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Logo from '../images/logo.png';
-import Palavra from '../images/crescendia_palavra.png';
+import Palavra from '../images/logo.png';
 import './Header.css';
 // import Playlist from '../../components/layout/playlist'
 
@@ -30,7 +30,9 @@ const Header = () => {
 
                 <div className="logo">
                    <img src={Logo} className="Logo"/>
-                   <img src={Palavra} className="Palavra" />
+                </div>
+                <div>
+                  <input className="pesquisa" type="search"/>
                 </div>
                 <div className="burger-menu" onClick={updateMenu}>
                     <div className={burger_class} ></div>
@@ -48,13 +50,13 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <a href="/">
-              <span>Home</span>
+            <a href="/Home">
+              <span className="home">Home</span>
             </a>
           </li>
           <li>
             <a href="/playlists">
-              <span>Playlist</span>
+              <span className="playlists">Playlist</span>
             </a>
           </li>
                 </ul>
