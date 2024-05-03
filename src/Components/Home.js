@@ -21,8 +21,7 @@ import Footer from './Footer';
 import './Home.css';
 
 
-
-export default function Home() {
+function Home() {
 
     const items =[
       {
@@ -168,14 +167,10 @@ export default function Home() {
         <div className='grid grid-cols-5 gap-x-6'>
                 {items.map(item => <Song item={item} key={item.id} /> )}
                 
-<<<<<<< Updated upstream
         </div>
 
    
 
-=======
-        </div>  
->>>>>>> Stashed changes
       </div>
         
         
@@ -187,8 +182,4 @@ export default function Home() {
 
 }
 
-<<<<<<< Updated upstream
-// export default Home;
-=======
-//export default Home;
->>>>>>> Stashed changes
+export default Home;
