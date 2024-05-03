@@ -108,11 +108,36 @@ nav {
     cursor: pointer;
 }
 
-.perfil {
-    width: max-content;
-    border-bottom: 1.5px solid #CD2840;
-    
+#span {
+    color: #CD2840;
 }
+
+#span:hover {
+    color: #976df2;
+    cursor: pointer;
+
+}
+
+.borda {
+    border-bottom: 1px solid #CD2840;
+    padding: 0 5px;
+}
+
+
+/* Barra de Scroll */
+
+  html ::-webkit-scrollbar {
+    width: 10px;
+  }
+  html ::-webkit-scrollbar-thumb {
+    border-radius: 50px;
+    background-image: linear-gradient( #240140, #cd2840 ); 
+  }
+  html ::-webkit-scrollbar-track {
+    background: black;
+  }
+
+
 
 /* _______________________________________ */
 /* Resposividade */

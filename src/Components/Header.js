@@ -42,19 +42,19 @@ const Header = () => {
             <div className={menu_class}>
 
                 <ul className="toggle">
-                <li>
+                <li className="borda">
             <a href="/LoginCadastro">
-              <span className="perfil">Perfil</span>
+              <span id="span" className="perfil">Perfil</span>
             </a>
           </li>
           <li>
             <a href="/">
-              <span>Home</span>
+              <span id="span">Home</span>
             </a>
           </li>
           <li>
             <a href="/playlists">
-              <span>Playlist</span>
+              <span id="span">Playlist</span>
             </a>
           </li>
                 </ul>
