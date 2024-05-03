@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import Logo from '../images/logo.png';
-import Palavra from '../images/logo.png';
+// import Palavra from '../images/logo.png';
 import './Header.css';
 // import Playlist from '../../components/layout/playlist'
 
@@ -31,35 +31,54 @@ const Header = () => {
                 <div className="logo">
                    <img src={Logo} className="Logo"/>
                 </div>
+
+                <div className="search">
+
                 <div>
                   <input className="pesquisa" type="search"/>
                 </div>
+
                 <div className="burger-menu" onClick={updateMenu}>
+               
                     <div className={burger_class} ></div>
                     <div className={burger_class} ></div>
                     <div className={burger_class} ></div>
                 </div>
+                </div>
             </nav>
+
 
             <div className={menu_class}>
 
-                <ul className="toggle">
+              <ul className="icone">
                 <li>
+                  <img src="" alt="" />
+                </li>
+                <li>
+                  <img src="" alt="" />
+                </li>
+                <li>
+                  <img src="" alt="" />
+                </li>
+              </ul>
+
+        <ul className="toggle">
+                <li className="borda">
             <a href="/LoginCadastro">
-              <span className="perfil">Perfil</span>
+              <span id="span" className="perfil">Perfil</span>
             </a>
           </li>
           <li>
-            <a href="/Home">
-              <span className="home">Home</span>
+            <a href="/">
+              <span id="span">Home</span>
             </a>
           </li>
           <li>
             <a href="/playlists">
-              <span className="playlists">Playlist</span>
+              <span id="span">Playlist</span>
             </a>
           </li>
-                </ul>
+        </ul>
 
             </div>
         </div>
