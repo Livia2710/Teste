@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 
 
 import Footer from './Footer'
@@ -24,7 +25,8 @@ import Banner from '../images/banner.png'
 import Play from '../images/play.png'
 import Random from '../icones/random.png'
 import Edit from '../icones/edit.png'
-import Save from '../icones/save.png'
+import SaveAfter from '../icones/save.png'
+import SaveBefor from '../icones/estrela.png'
 import Share from '../icones/share.png'
 
 const PlaylisInfos = [
@@ -41,6 +43,20 @@ const PlaylistSongs =[
   {id: 7, cover: Capa6, name: 'De 10 Mulher 11 é Maluca', author: 'Mc Saci', durantion: '1:47', song: mp3_6},
   {id: 8, cover: Capa7, name: 'Fogo Fátuo', author: 'Lupe De Lupe', durantion: '3:53', song: mp3_7},
 ]
+
+const ImageSwap = () => {
+  const [image, setImage] = useState(SaveBefor);
+
+  const handleClick = () => {
+    setImage(image === SaveBefor ? SaveAfter : SaveBefor);
+  };
+
+  return (
+    <div>
+      <img src={image} alt="Swap Image" onClick={handleClick}  className='saveButton'/>
+    </div>
+  );
+}
 
 const Playlists = () => {
   return (
@@ -82,7 +98,9 @@ const Playlists = () => {
               <li className='time'><p>{Song.durantion}</p></li>
 
               <li className='buttons'>
-                <img src={Save} className='saveButton'/>
+
+                <ImageSwap />
+
                 <img src={Share} className='shareButton'/>
               </li>
 
