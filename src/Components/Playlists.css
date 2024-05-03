@@ -95,7 +95,7 @@ h1 {
 }
 
 .cover {
-    margin-right: 25%;
+    margin-right: 15%;
 
 }
 .cover img{
@@ -104,10 +104,14 @@ h1 {
 
 .name {
     font-weight: bolder;
+    font-size: 25px;
+}
+.author{
+    font-size: medium;
 }
 
 .details {
-    width: 15%;
+    width: 20%;
     margin-right: 25%;
 }
 
