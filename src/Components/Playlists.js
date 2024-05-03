@@ -1,4 +1,5 @@
 import React from 'react'
+import { useState } from 'react';
 
 
 import Footer from './Footer'
@@ -12,11 +13,20 @@ import Capa5 from '../capas/rises.png'
 import Capa6 from '../capas/de 10 mulher.png'
 import Capa7 from '../capas/fogo.png'
 
+import mp3_1 from '../Músicas/Only.mp3'
+import mp3_2 from '../Músicas/Glimpse.mp3'
+import mp3_3 from '../Músicas/Sparks.mp3'
+import mp3_4 from '../Músicas/Grenade.mp3'
+import mp3_5 from '../Músicas/Rises.mp3'
+import mp3_6 from '../Músicas/10Mulher.mp3'
+import mp3_7 from '../Músicas/Fogo-Fátuo.mp3'
+
 import Banner from '../images/banner.png'
 import Play from '../images/play.png'
 import Random from '../icones/random.png'
 import Edit from '../icones/edit.png'
-import Save from '../icones/save.png'
+import SaveAfter from '../icones/save.png'
+import SaveBefor from '../icones/estrela.png'
 import Share from '../icones/share.png'
 
 const PlaylisInfos = [
@@ -25,14 +35,28 @@ const PlaylisInfos = [
 
 const PlaylistSongs =[
 
-  {id: 2, cover: Capa1, name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04'},
-  {id: 3, cover: Capa2, name: 'Glipse of Us', author: 'Joji', durantion: '3:53'},
-  {id: 4, cover: Capa3, name: 'Sparks', author: 'Coldplay', durantion: '3:47'},
-  {id: 5, cover: Capa4, name: 'Grenade', author: 'Bruno Mars', durantion: '3:42'},
-  {id: 6, cover: Capa5, name: 'Rises the Moon', author: 'Liana Flores', durantion: '2:41'},
-  {id: 7, cover: Capa6, name: 'De 10 Mulher 11 é Maluca', author: 'Mc Saci', durantion: '1:47'},
-  {id: 8, cover: Capa7, name: 'Fogo Fátuo', author: 'Lupe De Lupe', durantion: '3:53'},
+  {id: 2, cover: Capa1, name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04', song: mp3_1},
+  {id: 3, cover: Capa2, name: 'Glipse of Us', author: 'Joji', durantion: '3:53', song: mp3_2},
+  {id: 4, cover: Capa3, name: 'Sparks', author: 'Coldplay', durantion: '3:47', song: mp3_3},
+  {id: 5, cover: Capa4, name: 'Grenade', author: 'Bruno Mars', durantion: '3:42', song: mp3_4},
+  {id: 6, cover: Capa5, name: 'Rises the Moon', author: 'Liana Flores', durantion: '2:41', song: mp3_5},
+  {id: 7, cover: Capa6, name: 'De 10 Mulher 11 é Maluca', author: 'Mc Saci', durantion: '1:47', song: mp3_6},
+  {id: 8, cover: Capa7, name: 'Fogo Fátuo', author: 'Lupe De Lupe', durantion: '3:53', song: mp3_7},
 ]
+
+const ImageSwap = () => {
+  const [image, setImage] = useState(SaveBefor);
+
+  const handleClick = () => {
+    setImage(image === SaveBefor ? SaveAfter : SaveBefor);
+  };
+
+  return (
+    <div>
+      <img src={image} alt="Swap Image" onClick={handleClick}  className='saveButton'/>
+    </div>
+  );
+}
 
 const Playlists = () => {
   return (
@@ -74,7 +98,9 @@ const Playlists = () => {
               <li className='time'><p>{Song.durantion}</p></li>
 
               <li className='buttons'>
-                <img src={Save} className='saveButton'/>
+
+                <ImageSwap />
+
                 <img src={Share} className='shareButton'/>
               </li>
 
