@@ -103,14 +103,24 @@ export default function Home() {
             </div>
             
             
+<<<<<<< Updated upstream
             {/* <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
+=======
+            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
+>>>>>>> Stashed changes
               <img className='w-[5rem] h-[5rem]' src={Foto1} 
               />
               <h4 className='text-[16px] font-bold p-4'>Lívia Figueiredo</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
+<<<<<<< Updated upstream
                 <Icon name="play"/>
               </button>
             </div> */}
+=======
+                {/* <Icon name="play"/> */}
+              </button>
+            </div>
+>>>>>>> Stashed changes
             
             
             <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
@@ -118,8 +128,14 @@ export default function Home() {
               />
               <h4 className='text-[16px] font-bold p-4'>Pedro Tanaka</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
+<<<<<<< Updated upstream
                 {/* <Icon name="play"/> */}
               </button>
+=======
+                {/* <Icon name="play"/>  */}
+              </button>
+              
+>>>>>>> Stashed changes
             </div>
             <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
               <img className='w-[5rem] h-[5rem]' src={Foto3} />
@@ -152,18 +168,27 @@ export default function Home() {
         <div className='grid grid-cols-5 gap-x-6'>
                 {items.map(item => <Song item={item} key={item.id} /> )}
                 
+<<<<<<< Updated upstream
         </div>
 
    
 
+=======
+        </div>  
+>>>>>>> Stashed changes
       </div>
         
         
       <Footer/> 
+
     </div>
     
   );
 
 }
 
+<<<<<<< Updated upstream
 // export default Home;
+=======
+//export default Home;
+>>>>>>> Stashed changes

@@ -125,6 +125,20 @@ nav {
   
   .icone:hover {
     opacity: 0.7;
+
+  }
+  /* svg:hover path {
+    fill: #fce57e !;
+} */
+
+svg {
+    color: #784AAA;
+    transition: color 0.3s;
+}
+
+#User.icone:hover {
+    fill: red;
+    cursor: pointer;
   }
 /* _________________________________________ */
 /*  Barra de navegação */
@@ -133,6 +147,7 @@ nav {
     border-radius: 50px;
     width: 250px;
     height: 30px;
+    color: #000;
 
 }
 

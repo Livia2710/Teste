@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import Logo from '../images/logo.png';
 // import Palavra from '../images/logo.png';
 import './Header.css';
-import IconUser from '../icones/perfil.png'
+import IconUser from '../Svgs/User.svg'
 import IconHome from '../icones/home.png'
 import IconPlaylist from '../icones/playlist.png'
 // import IconUserHover from '../icones/perfilV.png' 
@@ -63,8 +63,8 @@ const Header = () => {
       
 
         <ul className="toggle">
-                <li className="borda">
-                  <img src={IconUser} alt="" className="icone" />
+                <li>
+                  <img src={IconUser} alt="" className="icone" id="User" />
             <a href="/LoginCadastro">
               <span id="span" className="perfil">Perfil</span>
             </a>
