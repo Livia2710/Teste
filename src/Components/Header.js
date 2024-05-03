@@ -2,8 +2,9 @@ import React, {useState} from "react";
 import Logo from '../images/logo.png';
 // import Palavra from '../images/logo.png';
 import './Header.css';
-import User from '../images/person.png'
-// import Home from '../images/password.png'
+import IconUser from '../icones/perfil.png'
+import IconHome from '../icones/home.png'
+import IconPlaylist from '../icones/playlist.png'
 
 const Header = () => {
 
@@ -53,20 +54,20 @@ const Header = () => {
       
 
         <ul className="toggle">
-                <li className="borda">
-                  <img src={User} alt="" className="icone" />
+                <li>
+                  <img src={IconUser} alt="" className="icone" />
             <a href="/LoginCadastro">
               <span id="span" className="perfil">Perfil</span>
             </a>
           </li>
           <li>
-          <img src={User} alt="" className="icone" />
+          <img src={IconHome} alt="" className="icone" />
             <a href="/">
               <span id="span">Home</span>
             </a>
           </li>
           <li>
-          <img src={User} alt="" className="icone" />
+          <img src={IconPlaylist} alt="" className="icone" />
             <a href="/playlists">
               <span id="span">Playlist</span>
             </a>

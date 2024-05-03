@@ -28,7 +28,7 @@ nav {
     width: 2em;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: space-between;
     cursor: pointer;
 }
@@ -91,7 +91,7 @@ nav {
     padding: 20px;
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     text-align: center;
 }
@@ -104,30 +104,24 @@ nav {
     transition: 0.3s ease-in-out;
 }
 
-.toggle li a:hover{
-    color: #976df2;
-    cursor: pointer;
-}
-
 #span {
-    color: #976df2;
+    color: #784AAA;
 }
 
 #span:hover {
-    color: #976df2;
+    color: #CD2840;
     cursor: pointer;
+    transition: 0.6;
 
 }
 
-.borda {
-    border-bottom: 1px solid #CD2840;
-    padding: 0 5px;
-}
+
 
 .icone {
     margin: 0 15px;
     border-radius: 100px;
-    border: 2px solid #976df2;
+    width: 50px;
+    height: 50px;
 }
 
 /* _________________________________________ */
