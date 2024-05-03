@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Footer from './Footer'
 import PlaylistSongs from './playlistDatabase';
@@ -16,7 +17,6 @@ import Share from '../icones/share.png'
 const PlaylisInfos = [
   {id: 1, author: 'Mitsuaki', title: 'Sou Triste e DECADENTE', songs: 7}
 ];
-
 
 
 const ImageSwap = () => {
@@ -52,7 +52,14 @@ const Playlists = () => {
 
             </li>
             <ul className='Buttons'>
-              <li><img src={Play} className='playButton'/></li>
+
+              <li>
+                <Link to="./player">
+                <img src={Play} className='playButton'/>
+                </Link>
+              </li>
+
+
               <li><img src={Random} className='randomButton' /></li>
               <li><img src={Edit} className='editButton' /></li>  
             </ul>

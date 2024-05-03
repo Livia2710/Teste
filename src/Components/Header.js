@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import { Link } from 'react-router-dom';
 import Logo from '../images/logo.png';
 // import Palavra from '../images/logo.png';
 import './Header.css';
@@ -34,7 +35,12 @@ const Header = () => {
             <nav>
 
                 <div className="logo">
+
+                  <Link to="/">
                    <img src={Logo} className="Logo"/>
+                   </Link>
+
+
                 </div>
 
                 <div className="search">
