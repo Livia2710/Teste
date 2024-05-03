@@ -8,7 +8,7 @@ nav {
     z-index: 1000; 
     width: 100%;
     height: 5em;
-    background-color: #262626;
+    background-color: #000;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,7 +34,7 @@ nav {
 }
 .burger-bar {
     width: 3em;
-    height: 0.3em;
+    height: 0.35em;
     background-color:#CD2840;
     border-radius: 0.5em;
 }
@@ -44,7 +44,7 @@ nav {
     z-index: 1000; 
     width: 30%;
     height: 100vh;
-    background-color: #262626;
+    background-color: #000;
     right: 0; 
 }
 /* ____Menu ________________*/
@@ -60,7 +60,7 @@ nav {
 /* ____Animações___*/
 /* clicked */
 .burger-bar.clicked:nth-child(1){
-    transform: rotate(44deg) translate(0.70em, 1.25em);
+    transform: rotate(44deg) translate(0.60em, 1.22em);
     transition: ease-out 0.5s;
 }
 
@@ -110,7 +110,7 @@ nav {
 }
 
 #span {
-    color: #CD2840;
+    color: #976df2;
 }
 
 #span:hover {
@@ -124,12 +124,20 @@ nav {
     padding: 0 5px;
 }
 
+.icone {
+    margin: 0 15px;
+    border-radius: 100px;
+    border: 2px solid #976df2;
+}
+
 /* _________________________________________ */
 /*  Barra de navegação */
 
 .pesquisa {
     border-radius: 50px;
-    width: 250px
+    width: 250px;
+    height: 30px;
+
 }
 
 
