@@ -39,6 +39,7 @@
   
   a:hover {
     color: #B71129;
+    transition-duration: 0.2s;
   }
 
   .list-unstyled{

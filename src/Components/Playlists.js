@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 import Footer from './Footer'
@@ -36,7 +37,7 @@ const PlaylisInfos = [
 const PlaylistSongs =[
 
   {id: 2, cover: Capa1, name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04', song: mp3_1},
-  {id: 3, cover: Capa2, name: 'Glipse of Us', author: 'Joji', durantion: '3:53', song: mp3_2},
+  {id: 3, cover: Capa2, name: 'Glimpse of Us', author: 'Joji', durantion: '3:53', song: mp3_2},
   {id: 4, cover: Capa3, name: 'Sparks', author: 'Coldplay', durantion: '3:47', song: mp3_3},
   {id: 5, cover: Capa4, name: 'Grenade', author: 'Bruno Mars', durantion: '3:42', song: mp3_4},
   {id: 6, cover: Capa5, name: 'Rises the Moon', author: 'Liana Flores', durantion: '2:41', song: mp3_5},
@@ -77,7 +78,14 @@ const Playlists = () => {
 
             </li>
             <ul className='Buttons'>
-              <li><img src={Play} className='playButton'/></li>
+
+              <li>
+                <Link to="./player">
+                <img src={Play} className='playButton'/>
+                </Link>
+              </li>
+
+
               <li><img src={Random} className='randomButton' /></li>
               <li><img src={Edit} className='editButton' /></li>  
             </ul>
