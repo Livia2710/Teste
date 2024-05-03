@@ -2,7 +2,8 @@ import React, {useState} from "react";
 import Logo from '../images/logo.png';
 // import Palavra from '../images/logo.png';
 import './Header.css';
-// import Playlist from '../../components/layout/playlist'
+import User from '../images/person.png'
+// import Home from '../images/password.png'
 
 const Header = () => {
 
@@ -35,7 +36,7 @@ const Header = () => {
                 <div className="search">
 
                 <div>
-                  <input className="pesquisa" type="search"/>
+                  <input className="pesquisa" type="search" placeholder="  Buscar"/>
                 </div>
 
                 <div className="burger-menu" onClick={updateMenu}>
@@ -49,31 +50,23 @@ const Header = () => {
 
 
             <div className={menu_class}>
-
-              <ul className="icone">
-                <li>
-                  <img src="" alt="" />
-                </li>
-                <li>
-                  <img src="" alt="" />
-                </li>
-                <li>
-                  <img src="" alt="" />
-                </li>
-              </ul>
+      
 
         <ul className="toggle">
                 <li className="borda">
+                  <img src={User} alt="" className="icone" />
             <a href="/LoginCadastro">
               <span id="span" className="perfil">Perfil</span>
             </a>
           </li>
           <li>
+          <img src={User} alt="" className="icone" />
             <a href="/">
               <span id="span">Home</span>
             </a>
           </li>
           <li>
+          <img src={User} alt="" className="icone" />
             <a href="/playlists">
               <span id="span">Playlist</span>
             </a>
