@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 import Footer from './Footer'
 import PlaylistSongs from './playlistDatabase';
@@ -52,7 +53,7 @@ const Playlists = () => {
 
             </li>
             <ul className='Buttons'>
-              <li><img src={Play} className='playButton'/></li>
+              <li><a href="/player"><img src={Play} className='playButton'/></a></li>
               <li><img src={Random} className='randomButton' /></li>
               <li><img src={Edit} className='editButton' /></li>  
             </ul>

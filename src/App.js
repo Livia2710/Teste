@@ -5,6 +5,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Login from "./Components/LoginCadastro";
 import Playlists from "./Components/Playlists";
+import Player from "../music-t/src/components/Player";
 
 // Componente funcional principal App
 function App() {
@@ -25,6 +26,9 @@ function App() {
 
           {/* Rota para a página "Contato" */}
           <Route path="/playlists" element={<Playlists />} />
+
+          {/* Rota da Playlist para o Player */}
+          <Route path="/player" element={<Player/>} />
         </Routes>
       </Router>
     </div>
