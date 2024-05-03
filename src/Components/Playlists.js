@@ -2,25 +2,9 @@ import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-
 import Footer from './Footer'
+import PlaylistSongs from './playlistDatabase';
 import './Playlists.css'
-
-import Capa1 from '../capas/only.png'
-import Capa2 from '../capas/glimpse.png'
-import Capa3 from '../capas/sparks.png'
-import Capa4 from '../capas/grenade.png'
-import Capa5 from '../capas/rises.png'
-import Capa6 from '../capas/de 10 mulher.png'
-import Capa7 from '../capas/fogo.png'
-
-import mp3_1 from '../Músicas/Only.mp3'
-import mp3_2 from '../Músicas/Glimpse.mp3'
-import mp3_3 from '../Músicas/Sparks.mp3'
-import mp3_4 from '../Músicas/Grenade.mp3'
-import mp3_5 from '../Músicas/Rises.mp3'
-import mp3_6 from '../Músicas/10Mulher.mp3'
-import mp3_7 from '../Músicas/Fogo-Fátuo.mp3'
 
 import Banner from '../images/banner.png'
 import Play from '../images/play.png'
@@ -34,7 +18,6 @@ const PlaylisInfos = [
   {id: 1, author: 'Mitsuaki', title: 'Sou Triste e DECADENTE', songs: 7}
 ];
 
-const PlaylistSongs =[
 
   {id: 2, cover: Capa1, name: 'Only One Who Knows', author: 'Arctic Monkeys', durantion: '3:04', song: mp3_1},
   {id: 3, cover: Capa2, name: 'Glimpse of Us', author: 'Joji', durantion: '3:53', song: mp3_2},
