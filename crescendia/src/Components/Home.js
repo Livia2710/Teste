@@ -15,6 +15,8 @@ import Mix2 from '../images/card-mix3.png'
 import Mix3 from '../images/card-mix4.png'
 import Mix4 from '../images/card-mix5.png'
 
+import Play from '../images/play.png'
+
 
 
 import Footer from './Footer';
@@ -152,7 +154,9 @@ function Home() {
                 <p className='mix'>{item.title}</p>
                 </li>
                 <li className='album'>
-                  <img src={item.image} />
+                  
+                  <img src={Play} className='play'/>
+                  <img src={item.image} className='img-album' />
                 </li>
                 <li className='detalhes'>
                 <p className='mix'>{item.artist}</p>

@@ -28,11 +28,10 @@ function App() {
           <Route path="/playlists" element={<Playlists />} />
 
             {/* Rota para a página "Player" */}
-            <Route path="/playlists/player" element={<Player />} />
-
-
+            <Route path="/player" element={<Player />} />
 
         </Routes>
+        
       </Router>
     </div>
   );

@@ -54,7 +54,7 @@ const Playlists = () => {
             <ul className='Buttons'>
 
               <li>
-                <Link to="./player">
+                <Link to="/player">
                 <img src={Play} className='playButton'/>
                 </Link>
               </li>
