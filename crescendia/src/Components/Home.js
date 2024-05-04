@@ -15,7 +15,7 @@ import Mix2 from '../images/card-mix3.png'
 import Mix3 from '../images/card-mix4.png'
 import Mix4 from '../images/card-mix5.png'
 
-import { NavLink } from 'react-router-dom';
+
 
 import Footer from './Footer';
 import './Home.css';
@@ -72,87 +72,66 @@ function Home() {
       
     
       <div>
-        <div>
-          <h3 className='text-3xl text-white font-bold tracking-tight mb-6'>Bem - Vindo!</h3>
-          <div className='grid grid-cols-3 items-center justify-center gap-x-6 gap-y-4 mb-6 transition-all'>
-              <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-                <img className='w-[5rem] h-[5rem]' src={Curtidas} />
-                <h4 className='text-[16px] font-bold p-4'>Músicas Curtidas</h4>
+        <div className='cards-playlist'>
+          <h3 className='texto'>Bem - Vindo!</h3>
+
+        
+          <div className='card_playlist'>
+              <div className='card'>
+                <img className='img-playlist' src={Curtidas} />
+                <h4 className='Nomes'>Músicas Curtidas</h4>
                 <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
                   {/* <Icon name="play"/> */}
                 </button>
             </div>
             
             
-            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-              <img className='w-[5rem] h-[5rem]' src={Decadente} />
-              <h4 className='text-[16px] font-bold p-4'>Sou triste e DECADENTE</h4>
+            <div className='card'>
+              <img className='img-playlist' src={Decadente} />
+              <h4 className='Nomes'>Sou triste e DECADENTE</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
                 {/* <Icon name="play"/> */}
               </button>
             </div>
             
             
-            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-              <img className='w-[5rem] h-[5rem]' src={Foto} />
-              <h4 className='text-[16px] font-bold p-4'>Gabriela Malerba</h4>
+            <div className='card'>
+              <img className='img-playlist' src={Foto} />
+              <h4 className='Nomes'>Gabriela Malerba</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
                 {/* <Icon name="play"/> */}
               </button>
             </div>
             
+         
             
-<<<<<<< Updated upstream
-            {/* <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-=======
-            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
->>>>>>> Stashed changes
-              <img className='w-[5rem] h-[5rem]' src={Foto1} 
-              />
-              <h4 className='text-[16px] font-bold p-4'>Lívia Figueiredo</h4>
+            
+            <div className='card'>
+              <img className='img-playlist' src={Foto2}/>
+              <h4 className='Nomes'>Pedro Tanaka</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
-<<<<<<< Updated upstream
-                <Icon name="play"/>
-              </button>
-            </div> */}
-=======
                 {/* <Icon name="play"/> */}
               </button>
-            </div>
->>>>>>> Stashed changes
             
-            
-            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-              <img className='w-[5rem] h-[5rem]' src={Foto2} 
-              />
-              <h4 className='text-[16px] font-bold p-4'>Pedro Tanaka</h4>
-              <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
-<<<<<<< Updated upstream
-                {/* <Icon name="play"/> */}
-              </button>
-=======
-                {/* <Icon name="play"/>  */}
-              </button>
               
->>>>>>> Stashed changes
             </div>
-            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-              <img className='w-[5rem] h-[5rem]' src={Foto3} />
-              <h4 className='text-[16px] font-bold p-4'>Raphael Thierry</h4>
+            <div className='card'>
+              <img className='img-playlist' src={Foto3} />
+              <h4 className='Nomes'>Raphael Thierry</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
                 {/* <Icon name="play"/> */}
               </button>
             </div>
-            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-              <img className='w-[5rem] h-[5rem]' src={Foto4} />
-              <h4 className='text-[16px] font-bold p-4'>Sophia Keller</h4>
+            <div className='card'>
+              <img className='img-playlist' src={Foto4} />
+              <h4 className='Nomes'>Sophia Keller</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
                 {/* <Icon name="play"/> */}
               </button>
             </div>
-            <div className='flex items-center gap-x-4 bg-dortbox group relative hover:bg-dortboxact rounded'>
-              <img className='w-[5rem] h-[5rem]' src={Foto5} />
-              <h4 className='text-[16px] font-bold p-4'>Victor Oliveira</h4>
+            <div className='card'>
+              <img className='img-playlist' src={Foto5} />
+              <h4 className='Nomes'>Victor Oliveira</h4>
               <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
                 {/* <Icon name="play"/> */}
               </button>
@@ -160,14 +139,15 @@ function Home() {
 
           </div>
         </div>
-        <div className='flex justify-between items-end mb-4'>
+        {/* <div className='flex justify-between items-end mb-4'>
         <PlayBox title={'Recomendações para você'}/>
         <PlayBox see />
-        </div>
-        <div className='grid grid-cols-5 gap-x-6'>
+        </div> */}
+
+        {/* <div className='grid grid-cols-5 gap-x-6'>
                 {items.map(item => <Song item={item} key={item.id} /> )}
                 
-        </div>
+        </div> */}
 
    
 

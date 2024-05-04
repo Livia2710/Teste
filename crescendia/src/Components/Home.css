@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+body {
+    background-color: #240140;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+
+}
+
+.img-playlist {
+    margin-right: 20px;
+    height: 80px;
+}
+
+.cards-playlist {
+    background-color: aqua;
+    margin: 20px 60px;
+    
+    
+}
+
+.card_playlist{
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap ;
+}
+
+.card {
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    width: 423px;
+    height: 80px;
+    margin: 20px 10px;
+    align-items: center;
+}
+       
