@@ -29,15 +29,14 @@ function Home() {
         title: 'Mix 1',
         artist: 'Eren Yalçın',
         image: Mix,
-        src:'../images/card-mix1.png'
+      
       },
-  
       {
         id: 2,
         title: 'Mix 2',
         artist: 'Evdeki Saat',
         image: Mix1,
-        src: '../images/card-mix2.png'
+      
       },
   
       {
@@ -45,7 +44,7 @@ function Home() {
         title: 'Mix 3',
         artist: 'UZI',
         image: Mix2,
-        src: '../images/card-mix3.png'
+       
       },
   
      {
@@ -53,7 +52,6 @@ function Home() {
         title: 'Mix 4',
         artist: 'Duman',
         image: Mix3,
-        src: '../images/card-mix4.png'
       },
   
       {
@@ -61,7 +59,6 @@ function Home() {
         title: 'Mix 5',
         artist: 'Madrigal',
         image: Mix4,
-        src:'../images/card-mix5.png'
       },
   
       
@@ -73,7 +70,7 @@ function Home() {
     
       <div>
         <div className='cards-playlist'>
-          <h3 className='texto'>Bem - Vindo!</h3>
+          <h3 className='texto'>Bem-Vindo!</h3>
 
         
           <div className='card_playlist'>
@@ -139,23 +136,37 @@ function Home() {
 
           </div>
         </div>
-        {/* <div className='flex justify-between items-end mb-4'>
-        <PlayBox title={'Recomendações para você'}/>
-        <PlayBox see />
-        </div> */}
 
-        {/* <div className='grid grid-cols-5 gap-x-6'>
-                {items.map(item => <Song item={item} key={item.id} /> )}
-                
-        </div> */}
+
+        
+        {/* Recomendações */}
+        <div>
+
+        <h3 className='texto'>Sugestões para você</h3>
+
+
+           <div className='recomendacoes'>
+             {items.map((item) => (
+               <ul key={item.id} className='sugestoes'>
+                 <li className='detalhes'>
+                <p className='mix'>{item.title}</p>
+                </li>
+                <li className='album'>
+                  <img src={item.image} />
+                </li>
+                <li className='detalhes'>
+                <p className='mix'>{item.artist}</p>
+                </li>
+               </ul>
+             ))}
+           </div>
+
+        </div>
 
    
 
       </div>
-        
-        
       <Footer/> 
-
     </div>
     
   );
