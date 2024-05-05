@@ -141,7 +141,7 @@ html ::-webkit-scrollbar-track {
 /* Responsividade para telas médias */
 @media (max-width: 1024px) {
     .menu {
-        width: 54%;  
+        width: 64%;  
     }
   
     nav {
@@ -153,6 +153,8 @@ html ::-webkit-scrollbar-track {
 
     .search {
         padding: 0 100px;
+        margin-right: 90px;
+        
     }
 
     .Logo {
@@ -162,10 +164,7 @@ html ::-webkit-scrollbar-track {
     }
     .pesquisa {
         width: 60%;  
-    }
-
-    .burger-bar {
-        margin-left: 45px;
+       
     }
 
    

@@ -113,3 +113,64 @@
     color: #fff;
     transition: 0.5s ease-out;
 }
+
+/* __________________________________________ */
+/* Responsividade */
+
+
+/* Media Queries para ajustes em telas médias (1024px) */
+@media (max-width: 1024px) {
+    .container {
+        width: 70%; /* Ajustar a largura para 80% da tela */
+        padding-bottom: 20px;
+        margin: 100px 30px
+    }
+
+    .text {
+        font-size: 36px; /* Reduzir o tamanho da fonte do título */
+    }
+
+    .input {
+        width: 90%; /* Ajustar a largura do campo de input para ser mais responsivo */
+        height: 60px;
+    }
+
+    .input input {
+        width: calc(100% - 60px); /* Ajustar a largura do input interno */
+    }
+
+    .submit {
+        width: 180px; /* Reduzir a largura dos botões */
+        height: 50px;
+    }
+}
+
+/* Media Queries para ajustes em telas pequenas (600px) */
+@media (max-width: 600px) {
+    .container {
+        width: 95%; /* Usar quase toda a largura da tela */
+        margin-top: 50px; /* Reduzir a margem superior */
+    }
+
+    .text {
+        font-size: 28px; /* Reduzir ainda mais o tamanho da fonte */
+    }
+
+    .input {
+        width: 100%; /* Usar toda a largura disponível */
+        height: 50px; /* Ajustar a altura para uma visualização melhor */
+    }
+
+    .input input {
+        width: 80%; /* Ajustar a largura do input para se adequar ao novo layout */
+    }
+
+    .submit, .gray {
+        width: 100%; /* Botões devem ocupar a largura total */
+        height: 45px; /* Ajustar a altura dos botões */
+    }
+
+    .forgot-password {
+        padding-left: 20px; /* Ajustar o padding para esquerda */
+    }
+}

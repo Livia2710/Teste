@@ -8,6 +8,7 @@
 
 body {
     background-color: #240140;
+    overflow-x: hidden;
 }
 
 /* Título */
@@ -52,7 +53,7 @@ body {
 /* Recomendações */
 .recomendacoes {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 50px;
 }
@@ -100,10 +101,14 @@ body {
     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 
-/* Media Queries */
+/* _______________________________*/
+/* Responsividade */
+
+
+/* Telas médias */
 @media (max-width: 1024px) {
      .Nomes, .detalhes {
-        font-size: 16px; /* Reduzir o tamanho da fonte */
+        font-size: 14px; 
     }
 
     .texto {
@@ -111,31 +116,36 @@ body {
     }
 
     .card {
-        width: 200px;        
+        width: 175px;        
     }
 
-   
-
-    
+    .img-playlist {
+        margin-right: 9px;
+    } 
 
     .cards-playlist, .recomendacoes {
         margin: 10px; /* Reduzir as margens */
     }
 
-    .recomendacoes {
-        width: calc(100% / 1.5); 
-        margin-bottom: 50px;
+    .recomendacoes{
+        margin: 0;
     }
+
 
     .sugestoes {
         margin: 0 5px;
+        margin-bottom: 20px;
+        
+    
     }
     .album img {
-        height: 165px;
-        width: 145px;
+        height: 185px;
+        width: 166px;
         margin: 5px 10px;
     }
 }
+
+/* telas pequenas */
 
 @media (max-width: 600px) {
     .texto {
@@ -148,19 +158,6 @@ body {
     }
 
 
-    .cards-playlist {
-        margin: 5px; 
-    }
-
-    .sugestoes {
-        padding: 5px; 
-        
-    }
-
-    .recomendacoes {
-        width: calc(100% / 2.3); 
-
-    }
 
     .album img {
         height: 135px;
@@ -169,12 +166,12 @@ body {
     }
 
     .card {
-        width: 160px;  
+        width: 157px;  
     
     }
 
     .img-playlist {
-        margin-right: 9px;
+        margin-right: 7px;
     }
 
 }
