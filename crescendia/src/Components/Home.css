@@ -1,45 +1,34 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
-
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    
-    
 }
 
 body {
     background-color: #240140;
-
 }
 
-/* TItulo */
-
+/* Título */
 .texto {
     font-size: 32px;
     margin-left: 50px;
 }
 
-
 /* Cards com as nossas playlists */
-
 .img-playlist {
-    margin-right: 20px;
     height: 80px;
+    margin-right: 20px;
 }
 
 .cards-playlist {
     margin: 20px 60px; 
-    
 }
 
-.card_playlist{
+.card_playlist {
     display: flex;
-    flex-wrap: wrap ;
+    flex-wrap: wrap;
 }
 
 .card {
@@ -61,7 +50,6 @@ body {
 }
 
 /* Recomendações */
-
 .recomendacoes {
     display: flex;
     flex-direction: row;
@@ -74,29 +62,23 @@ body {
     margin: 25px 15px;
     border-radius: 10px;
     padding-top: 20px;
-
 }
 
 .sugestoes:hover {
     opacity: 0.7;
     cursor: pointer;
     transition: 0.3s;
-
 }
 
-.sugestoes:hover  .play{
+.sugestoes:hover .play {
     opacity: 1;
     transform: translateY(0);
-
 }
-
-
 
 .album img {
     height: 220px;
     width: 230px;
     margin: 5px 10px;
-    
 }
 
 .detalhes {
@@ -115,5 +97,84 @@ body {
     z-index: 10;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out ;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+     .Nomes, .detalhes {
+        font-size: 16px; /* Reduzir o tamanho da fonte */
+    }
+
+    .texto {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 200px;        
+    }
+
+   
+
+    
+
+    .cards-playlist, .recomendacoes {
+        margin: 10px; /* Reduzir as margens */
+    }
+
+    .recomendacoes {
+        width: calc(100% / 1.5); 
+        margin-bottom: 50px;
+    }
+
+    .sugestoes {
+        margin: 0 5px;
+    }
+    .album img {
+        height: 165px;
+        width: 145px;
+        margin: 5px 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .texto {
+        font-size: 18px; 
+        margin-left: 20px;
+    }
+
+    .Nomes {
+        font-size: 12px;
+    }
+
+
+    .cards-playlist {
+        margin: 5px; 
+    }
+
+    .sugestoes {
+        padding: 5px; 
+        
+    }
+
+    .recomendacoes {
+        width: calc(100% / 2.3); 
+
+    }
+
+    .album img {
+        height: 135px;
+        width: 150px;
+        margin: 5px 10px;
+    }
+
+    .card {
+        width: 160px;  
+    
+    }
+
+    .img-playlist {
+        margin-right: 9px;
+    }
+
 }

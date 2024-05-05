@@ -1,3 +1,4 @@
+/* Estilos Gerais */
 * {
     margin: 0;
     box-sizing: border-box;
@@ -13,7 +14,6 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1em;
-    
 }
 
 .Logo {
@@ -21,7 +21,6 @@ nav {
     width: 75px;
     height: 75px;
 }
-
 
 .burger-menu {
     height: 100%;
@@ -32,10 +31,11 @@ nav {
     justify-content: space-between;
     cursor: pointer;
 }
+
 .burger-bar {
     width: 3em;
     height: 0.35em;
-    background-color:#CD2840;
+    background-color: #CD2840;
     border-radius: 0.5em;
 }
 
@@ -47,7 +47,7 @@ nav {
     background-color: #000;
     right: 0; 
 }
-/* ____Menu ________________*/
+
 .hidden {
     display: none;
 }
@@ -57,43 +57,29 @@ nav {
     transition: 0.6s;
 }
 
-/* ____Animações___*/
-/* clicked */
-.burger-bar.clicked:nth-child(1){
+/* Animações para burger menu */
+.burger-bar.clicked:nth-child(1) {
     transform: rotate(44deg) translate(0.60em, 1.22em);
-    transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(2){
+.burger-bar.clicked:nth-child(2) {
     transform: scale(0.02);
-    transition: ease-out 0.5s;
 }
 
-.burger-bar.clicked:nth-child(3){
+.burger-bar.clicked:nth-child(3) {
     transform: rotate(135deg) translate(-0.35em, 1em);
-    transition: ease-out 0.5s;
 }
 
-/* não clicado */
 .burger-bar.unclicked {
     transform: rotate(0) translate(0);
-    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
-/* ________________________________________ */
-/* Links dentro da nav */
-
-
-
-
+/* Links e itens de navegação */
 .toggle li {
     list-style: none;
     padding: 20px;
-    position: relative;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
-    text-align: center;
 }
 
 .toggle li a {
@@ -101,114 +87,104 @@ nav {
     font-size: 1.3rem;
     font-weight: 400;
     color: #CD2840;
-    transition: 0.3s ease-in-out;
 }
 
 .span {
-    color: #B71129;
-    ;
+    color: #633D81;
     font-size: 32px;
     margin-left: 10px;
+    /* transition: color 0.3s ease;  */
 }
 
-
+.span.active {
+    color: #d4263f; 
+}
 
 .icone {
     width: 40px; 
     height: 40px; 
-    object-fit: cover; /* Mantém a proporção sem distorcer */
-    transition: all 0.3s ease;  
-    display: block;
-} 
-  /* .li:hover .icone {
-    cursor: pointer;
-    transition: 0.6;
-  } */
+    /* transition: all 0.3s ease;   */
+}
 
-  .span:hover {
-    color: #B71129;
-  }
-
-  .li:hover .span {
-    color: #B71129;
-    cursor: pointer;
-    transition: 0.6;
-  }
-/*_________________________________________ */
-/*  Barra de navegação */
+/* Barra de navegação */
+.search {
+    display: flex;
+    justify-content: space-evenly;
+    width: 500px;
+    height: 40px;
+}
 
 .pesquisa {
     border-radius: 50px;
     width: 250px;
     height: 30px;
-    color: #000;
-
 }
 
-
-.search {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: row;
-    width: 500px;
-    height: 40px;
-    margin-left: -150px;
-}
-
-
-/* Barra de Scroll */
-
-  html ::-webkit-scrollbar {
+/* Scrollbar customizado */
+html ::-webkit-scrollbar {
     width: 10px;
-  }
-  html ::-webkit-scrollbar-thumb {
+}
+
+html ::-webkit-scrollbar-thumb {
     border-radius: 50px;
-    background-image: linear-gradient( #240140, #cd2840 ); 
-  }
-  html ::-webkit-scrollbar-track {
+    background-image: linear-gradient(#240140, #cd2840); 
+}
+
+html ::-webkit-scrollbar-track {
     background: black;
-  }
+}
+
+/* ______________________________________ */
+/* Responsividade */
 
 
-
-/* _______________________________________ */
-/* Resposividade */
-
-
-/* Tamanho médio */
+/* Responsividade para telas médias */
 @media (max-width: 1024px) {
     .menu {
-        right: 30px;
-    
+        width: 54%;  
     }
-
   
     nav {
-        
-        display: flex;
         align-items: center;
-        justify-content: space-around;
+        height: auto; 
+        padding: 0.5em;  
     
     }
-    
 
+    .search {
+        padding: 0 100px;
+    }
 
-    
+    .Logo {
+        width: 50px;  
+        height: 50px;
+
+    }
+    .pesquisa {
+        width: 60%;  
+    }
+
+    .burger-bar {
+        margin-left: 45px;
+    }
+
+   
 }
 
-/* Tamanho pequeno */
+/* Responsividade para telas pequenas */
 @media (max-width: 600px) {
-    .Palavra{
-        display: none;
-    }
-
     .menu {
-        right: 50px;
-
+        width: 80%;  
+    }  
+    .search {
+        align-items: center;
+        padding: 0 12rem;  
     }
 
+    .pesquisa {
+        display: none;
+        
+    }
 
+   
 }
-
-
-

@@ -136,6 +136,14 @@ function Home() {
               </button>
             </div>
 
+            <div className='card'>
+              <img className='img-playlist' src={Decadente} />
+              <h4 className='Nomes'> Lívia Figueiredo</h4>
+              <button className='w-12 h-12 bg-primary absolute right-2 transition-opacity rounded-full flex items-center shadow-2xl justify-center opacity-0 group-hover:opacity-100 group-active:opacity-100'>
+                {/* <Icon name="play"/> */}
+              </button>
+            </div>
+
           </div>
         </div>
 
