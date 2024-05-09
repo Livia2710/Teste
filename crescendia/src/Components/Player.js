@@ -1,35 +1,40 @@
-import React, { useState } from 'react';
+import React from 'react'
+import { useState } from 'react'
 
-const MusicPlayer = ({ songs }) => {
-  const [currentSong, setCurrentSong] = useState(0);
+import musicInfo from './playlistDatabase'
 
-  const playSong = (index) => {
-    setCurrentSong(index);
-  };
+import Play from '../images/play.png'
+import Random from '../icones/random.png'
+
+function Player() {
+
+  const[songs, setSongs] = useState()
 
   return (
-    <div className="music-player">
-      <h1>Music Player</h1>
-      <button type="button" onClick={() => playSong((currentSong - 1 + songs.length) % songs.length)}>
-        Previous
-      </button>
-      <button type="button" onClick={() => playSong((currentSong + 1) % songs.length)}>
-        Next
-      </button>
-      <audio controls src={songs[currentSong].src}>
-        Your browser does not support the audio element.
-      </audio>
-      <ul>
-        {songs.map((song, index) => (
-          <li key={index}>
-            <button type="button" onClick={() => playSong(index)}>
-              {song.title}
-            </button>
-          </li>
-        ))}
-      </ul>
-    </div>
-  );
-};
+    <div>
+      {musicInfo.map((Song) => (
+          <section>
+            <div>
+              <h2>{Song.name}</h2>
+              <img src={Song.cover} alt="" />
+            </div>
 
-export default MusicPlayer;
+            <div>
+              {/* Barra com o tempo da musica aq */}
+              <div></div>
+              <ul>
+                {/* <li><a href=""><img src={} alt="" /></a></li>
+                <li><a href=""><img src={} alt="" /></a></li>
+                <li><a href=""><img src={Play}alt="" /></a></li>
+                <li><a href=""><img src={} alt="" /></a></li>
+                <li><a href=""><img src={Random} alt="" /></a></li> */}
+              </ul>
+            </div>
+          </section>
+        )
+      )}
+    </div>
+  )
+}
+
+export default Player
