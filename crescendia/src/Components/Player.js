@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { useState } from 'react'
 
 import PlaylistSongs from './playlistDatabase'
-import pause from '../icones/'
+import pause from '../icones/pause.png'
 import play from '../images/play.png'
 
 import './Player.css'
@@ -24,10 +24,14 @@ const Player = (audioSrc) => {
     <div>
       
       {/* Imagem da capa da musica */}
-      <div><img src='' /></div>
+      {PlaylistSongs.map((Song) => (
+
+        <div><img src={Song.cover} /></div>
+
+      ))}
 
       {/* Barra de progreção da musica */}
-      <div>
+      <div className='informations'>
         <input
           type='range'
           min='0'
@@ -39,15 +43,15 @@ const Player = (audioSrc) => {
         <audio ref={audioRef} src={audioSrc} />
 
         {/* Tempo atual e tempo total */}
-        <div>
+        <div className='duration'>
           <p>{currentTime}</p>
           <p>{durantion}</p>
         </div>
 
         {/* Botão de Play/Pause */}
         <button onClick={handlePlayPause}>
-          <span>
-            {isPlaying ? "pause" : "play"}
+          <span className='buttons'>
+            {isPlaying ? <img src={pause} /> : <img src={play} />}
           </span>
         </button>
       </div>
