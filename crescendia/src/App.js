@@ -5,7 +5,6 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Login from "./Components/LoginCadastro";
 import Playlists from "./Components/Playlists";
-import Player from "./Components/player/App"
 
 // Componente funcional principal App
 function App() {
@@ -26,9 +25,6 @@ function App() {
 
           {/* Rota para a página "Playlist" */}
           <Route path="/playlists" element={<Playlists />} />
-
-            {/* Rota para a página "Player" */}
-            <Route path="/player" element={<Player />} />
 
         </Routes>
         
