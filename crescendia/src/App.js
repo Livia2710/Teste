@@ -5,7 +5,7 @@ import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Login from "./Components/LoginCadastro";
 import Playlists from "./Components/Playlists";
-import Player from "./Components/Player"
+import Player from "./Components/player/App"
 
 // Componente funcional principal App
 function App() {
