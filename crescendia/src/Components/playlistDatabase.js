@@ -1,5 +1,3 @@
-import React from 'react'
-
 import Capa1 from '../capas/only.png'
 import Capa2 from '../capas/glimpse.png'
 import Capa3 from '../capas/sparks.png'
@@ -78,5 +76,5 @@ const PlaylistSongs =[
         song: mp3_7
 
     },
-  ]
+]
 export default PlaylistSongs

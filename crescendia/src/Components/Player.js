@@ -1,38 +1,57 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { useState } from 'react'
 
-import musicInfo from './playlistDatabase'
+import PlaylistSongs from './playlistDatabase'
+import pause from '../icones/'
+import play from '../images/play.png'
 
-import Play from '../images/play.png'
-import Random from '../icones/random.png'
+import './Player.css'
 
-function Player() {
+const Player = (audioSrc) => {
+  
+  const [isPlaying, setIsPlaying] = useState(false)
+  const [currentTime, setcurrentTime] = useState(0)
+  const [durantion, setdurantion] = useState(0)
 
-  const[songs, setSongs] = useState()
+  const audioRef = useRef(0)
 
+  // Função de selecionar um tempo especifico para tocar
+  const handleSeek = (e) =>{}
+  // Função de selecionar um tempo especifico para tocar
+  const handlePlayPause = () =>{}
+  
   return (
     <div>
-      {musicInfo.map((Song) => (
-          <section>
-            <div>
-              <h2>{Song.name}</h2>
-              <img src={Song.cover} alt="" />
-            </div>
+      
+      {/* Imagem da capa da musica */}
+      <div><img src='' /></div>
 
-            <div>
-              {/* Barra com o tempo da musica aq */}
-              <div></div>
-              <ul>
-                {/* <li><a href=""><img src={} alt="" /></a></li>
-                <li><a href=""><img src={} alt="" /></a></li>
-                <li><a href=""><img src={Play}alt="" /></a></li>
-                <li><a href=""><img src={} alt="" /></a></li>
-                <li><a href=""><img src={Random} alt="" /></a></li> */}
-              </ul>
-            </div>
-          </section>
-        )
-      )}
+      {/* Barra de progreção da musica */}
+      <div>
+        <input
+          type='range'
+          min='0'
+          max={durantion}
+          value={currentTime}
+          onChange={handleSeek}
+        />
+
+        <audio ref={audioRef} src={audioSrc} />
+
+        {/* Tempo atual e tempo total */}
+        <div>
+          <p>{currentTime}</p>
+          <p>{durantion}</p>
+        </div>
+
+        {/* Botão de Play/Pause */}
+        <button onClick={handlePlayPause}>
+          <span>
+            {isPlaying ? "pause" : "play"}
+          </span>
+        </button>
+      </div>
+
     </div>
   )
 }
