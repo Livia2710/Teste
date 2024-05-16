@@ -1,4 +1,6 @@
+*{
 
+}
 
 
 .container{
@@ -10,6 +12,8 @@
     width: 600px;
     padding-bottom: 30px;
     margin: 60px auto;
+
+    overflow: hidden;
 }
 
 .header{

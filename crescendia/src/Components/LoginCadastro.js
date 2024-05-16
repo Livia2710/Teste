@@ -29,7 +29,7 @@ const LoginCadastro = () => {
                     <input type="password" placeholder="senha" />
                 </div>
             </div>
-            {action==="Cadastro"?<div></div>:<div className="forgot-password">Esqueceu sua senha? <span>Clique Aqui</span></div>}
+            {action==="Cadastro"?<div></div>:<div className="forgot-password">Esqueceu sua senha? <a href="/"><span>Clique Aqui</span></a></div>}
             
 
             <div className="submit-container">

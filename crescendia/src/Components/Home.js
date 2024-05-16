@@ -28,9 +28,14 @@ import Play from '../images/play.png'
 
 import Footer from './Footer';
 import './Home.css';
+import Header from './Header';
+
+
 
 
 function Home() {
+
+ 
 
     const items =[
       {
@@ -107,7 +112,11 @@ function Home() {
     ]
   return (
 
+    
+
     <div className="body">
+
+<Header/>
       
     
       <div>
@@ -122,10 +131,12 @@ function Home() {
             </div>
             
             
-            <div className='card'>
-              <img className='img-playlist' src={Decadente} />
-              <h4 className='Nomes'>Sou triste e DECADENTE</h4>
-            </div>
+            <a href="/playlists">
+              <div className='card'>
+                  <img className='img-playlist' src={Decadente} />
+                  <h4 className='Nomes'>Sou triste e DECADENTE</h4>
+              </div>
+            </a>
             
             
             <div className='card'>

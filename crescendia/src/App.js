@@ -1,7 +1,6 @@
 // Importação dos componentes necessários
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/Header";
 import Home from "./Components/Home";
 import Login from "./Components/LoginCadastro";
 import Playlists from "./Components/Playlists";
@@ -12,9 +11,6 @@ function App() {
     <div className="App">
       {/* Componente Router do React Router */}
       <Router>
-        {/* Componente Header */}
-        <Header />
-
         {/* Definição das rotas */}
         <Routes>
           {/* Rota para a página inicial */}

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import Header from './Header';
 
 import Footer from './Footer'
 import PlaylistSongs from './playlistDatabase';
@@ -38,7 +39,10 @@ const Playlists = () => {
 
 
   return (
+   
     <div>
+
+      <Header/>
       
       <div className='container1'>
         {/* The Cape of playlist */}
@@ -57,8 +61,8 @@ const Playlists = () => {
             <ul className='Buttons'>
 
               <li>
-                <Link to="/player">
-                <img src={Play} className='playButton'/>
+                <Link to="">
+                  <img src={Play} className='playButton'/>
                 </Link>
               </li>
 
